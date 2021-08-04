@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // TextDev
   // ——————————————————————————————————————————————————
 
+  const el = document.querySelector('.dev')
   class TextScramble {
     constructor(el) {
       this.el = el
@@ -78,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
     'FULL STACK',
   ]
 
-  const el = document.querySelector('.dev')
   const fx = new TextScramble(el)
 
   let counter = 0
