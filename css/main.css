@@ -1,689 +1,786 @@
 /* VARIABLES */
 :root {
-    --azul_dev: #0cabb1;
-    --azul_shw_dev: rgba(1, 57, 59, 0.489);
-    --azul_dark_dev: rgb(11, 97, 100);
-    --fondo: #212429;
-    --fondo_shw: #191b1e;
+  --azul_dev: #0cabb1;
+  --azul_shw_dev: rgba(1, 57, 59, 0.489);
+  --azul_dark_dev: rgb(11, 97, 100);
+  --fondo: #212429;
+  --fondo_shw: #191b1e;
 
-    --html: #f06529;
-    --css: #2965f1;
-    --js: #f0db4f;
-    --php: #787cb5;
-    --java: #ec2025;
-    --python: #e4bb28;
-    --sql: #f29111;
+  --html: #f06529;
+  --css: #2965f1;
+  --js: #f0db4f;
+  --php: #787cb5;
+  --csharp: #69f0ae;
+  --net: #34abe5;
+  --java: #ec2025;
+  --python: #e4bb28;
+  --sql: #f29111;
 
-    --bootstrap: #563d7c;
-    --foundation: #074f68;
-    --bulma: #00d1b2;
-    --jquery: #0769ad;
-    --react: #60dafb;
-    --angular: #dd1b16;
-    --vue: #41b883;
-    --node: #3c873a;
-    --laravel: #fb503b;
-    --symfony: #000;
-    --spring: #8bc34a;
-    --django: #13563c;
-    --flask: #000;
+  --bootstrap: #563d7c;
+  --foundation: #074f68;
+  --bulma: #00d1b2;
+  --jquery: #0769ad;
+  --react: #60dafb;
+  --angular: #dd1b16;
+  --vue: #41b883;
+  --node: #3c873a;
+  --laravel: #fb503b;
+  --symfony: #000;
+  --spring: #8bc34a;
+  --django: #13563c;
+  --flask: #000;
 
-    --git: #f34f29;
-    --sass: #cc6699;
-    --pug: #efcca3;
-    --gulp: #eb4a4b;
-    --seo: #4486f7;
+  --git: #f34f29;
+  --sass: #cc6699;
+  --pug: #efcca3;
+  --gulp: #eb4a4b;
+  --seo: #4486f7;
 }
 
 /* GENÉRICO */
 
 a,
 li {
-    text-decoration: none;
-    list-style: none;
-    color: #212429;
+  text-decoration: none;
+  list-style: none;
+  color: #212429;
 }
 
 .color_dev {
-    color: var(--azul_dev);
+  color: var(--azul_dev);
 }
 
 .color_html {
-    color: var(--html);
+  color: var(--html);
 }
 
 .color_css {
-    color: var(--css);
+  color: var(--css);
 }
 
 .color_js {
-    color: var(--js);
+  color: var(--js);
 }
 
 .color_php {
-    color: var(--php);
+  color: var(--php);
 }
 
+.color_csharp {
+  color: var(--csharp);
+}
+
+.color_net {
+  color: var(--net);
+}
 .color_java {
-    color: var(--java);
+  color: var(--java);
 }
 
 .color_python {
-    color: var(--python);
+  color: var(--python);
 }
 
 .color_sql {
-    color: var(--sql);
+  color: var(--sql);
 }
 
 .color_bootstrap {
-    color: var(--bootstrap);
+  color: var(--bootstrap);
 }
 
 .color_foundation {
-    color: var(--foundation);
+  color: var(--foundation);
 }
 
 .color_bulma {
-    color: var(--bulma);
+  color: var(--bulma);
 }
 
 .color_jquery {
-    color: var(--jquery);
+  color: var(--jquery);
 }
 
 .color_react {
-    color: var(--react);
+  color: var(--react);
 }
 
 .color_angular {
-    color: var(--angular);
+  color: var(--angular);
 }
 
 .color_node {
-    color: var(--vue);
+  color: var(--vue);
 }
 
 .color_vue {
-    color: var(--node);
+  color: var(--node);
 }
 
 .color_laravel {
-    color: var(--laravel);
+  color: var(--laravel);
 }
 
 .color_symfony {
-    color: var(--symfony);
+  color: var(--symfony);
 }
 
 .color_spring {
-    color: var(--spring);
+  color: var(--spring);
 }
 
 .color_django {
-    color: var(--django);
+  color: var(--django);
 }
 
 .color_flask {
-    color: var(--flask);
+  color: var(--flask);
 }
 
 .color_git {
-    color: var(--git);
+  color: var(--git);
 }
 
 .color_sass {
-    color: var(--sass);
+  color: var(--sass);
 }
 
 .color_pug {
-    color: var(--pug);
+  color: var(--pug);
 }
 
 .color_gulp {
-    color: var(--gulp);
+  color: var(--gulp);
 }
 
 .color_seo {
-    color: var(--seo);
+  color: var(--seo);
 }
 
 .bg-dev {
-    background-color: var(--azul_shw_dev);
-    filter: saturate(70%);
+  background-color: var(--azul_shw_dev);
+  filter: saturate(70%);
 }
 
 .bg-fondo-alert {
-    background-color: var(--fondo);
-    filter: opacity(70%);
-    border: none;
+  background-color: var(--fondo);
+  filter: opacity(70%);
+  border: none;
 }
 
 .bg-pie {
-    background-color: var(--fondo_shw);
-    filter: opacity(70%);
-    border-left: 3.2px solid var(--azul_dev);
-    margin-top: 7rem;
+  background-color: var(--fondo_shw);
+  filter: opacity(70%);
+  border-left: 3.2px solid var(--azul_dev);
+  margin-top: 7rem;
 }
 
 .bg-fondo {
-    background-color: var(--fondo);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--fondo);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-html {
-    background-color: var(--html);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--html);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-css {
-    background-color: var(--css);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--css);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-js {
-    background-color: var(--js);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--js);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-php {
-    background-color: var(--php);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--php);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.bg-csharp {
+  background-color: var(--csharp);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.bg-net {
+  background-color: var(--net);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-java {
-    background-color: var(--java);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--java);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-python {
-    background-color: var(--python);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--python);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-sql {
-    background-color: var(--sql);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--sql);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-bootstrap {
-    background-color: var(--bootstrap);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--bootstrap);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-foundation {
-    background-color: var(--foundation);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--foundation);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-bulma {
-    background-color: var(--bulma);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--bulma);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-jquery {
-    background-color: var(--jquery);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--jquery);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-react {
-    background-color: var(--react);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--react);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-angular {
-    background-color: var(--angular);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--angular);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-vue {
-    background-color: var(--vue);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--vue);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-node {
-    background-color: var(--node);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--node);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-laravel {
-    background-color: var(--laravel);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--laravel);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-symfony {
-    background-color: var(--symfony);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--symfony);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-spring {
-    background-color: var(--spring);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--spring);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-django {
-    background-color: var(--django);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--django);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-flask {
-    background-color: var(--flask);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--flask);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-git {
-    background-color: var(--git);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--git);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-sass {
-    background-color: var(--sass);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--sass);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-pug {
-    background-color: var(--pug);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--pug);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-gulp {
-    background-color: var(--gulp);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--gulp);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 .bg-seo {
-    background-color: var(--seo);
-    filter: saturate(70%);
-    background-image: linear-gradient(250deg,
-            rgba(140, 138, 138, 0.15) 25%,
-            transparent 25%,
-            transparent 20%,
-            rgba(0, 0, 0, 0.15) 20%,
-            rgba(0, 0, 0, 0.408) 75%,
-            transparent 75%,
-            transparent);
+  background-color: var(--seo);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* BODY */
 
 body {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
 }
 
 /* NAV */
 
 nav {
-    padding: 2rem 1rem 0rem 2rem !important;
+  padding: 2rem 1rem 0rem 2rem !important;
 }
 
-header>nav ul>li {
-    padding: 0rem 0.5rem 0rem 0.5rem;
+header > nav ul > li {
+  padding: 0rem 0.5rem 0rem 0.5rem;
 }
 
-header>nav>div>a>img {
-    width: 3rem;
-    height: 3rem;
+header > nav > div > a > img {
+  width: 3rem;
+  height: 3rem;
 }
 
 .me-auto {
-    margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 
-header>nav>div>button {
-    border: 0 !important;
+header > nav > div > button {
+  border: 0 !important;
 }
 
-header>nav>div>button::selection {
-    color: transparent;
+header > nav > div > button::selection {
+  color: transparent;
 }
 
-header>nav>div>button>span {
-    font-size: 0.9rem;
+header > nav > div > button > span {
+  font-size: 0.9rem;
 }
 
 /* HEADER */
 
 header {
-    /* height: 20rem; */
-    padding-bottom: 2rem;
+  /* height: 20rem; */
+  padding-bottom: 2rem;
 }
 
 /* PRESENTACIÓN */
 
 .nameAbsolute {
-    position: absolute;
+  position: absolute;
+}
+
+.texto_index {
+  width: 20rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 #boh {
-    width: 23rem;
-    height: auto;
+  width: 23rem;
+  height: auto;
 }
 
 #myname {
-    top: 17rem;
+  top: 17rem;
 }
 
 #infoMi {
-    top: 15.5rem;
-    left: 12rem;
+  top: 15.5rem;
+  left: 12rem;
 }
 
 .dev {
-    color: var(--azul_dev);
-    top: 19rem;
-    left: 2rem;
+  color: var(--azul_dev);
+  top: 19rem;
+  left: 2rem;
 }
 
 .presentRS {
-    top: 1.9rem;
-    left: 13rem;
-    display: flex;
-    flex-direction: column;
+  top: 1.9rem;
+  left: 13rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .presentRS em {
-    font-size: 3.5rem;
-    padding-bottom: 0.5rem;
-    filter: opacity(30%);
-    transition: 1s;
+  font-size: 3.5rem;
+  padding-bottom: 0.5rem;
+  filter: opacity(30%);
+  transition: 1s;
 }
 
 #instagramI:hover {
-    filter: opacity(50%);
-    filter: saturate(30%);
-    color: #de1b85 !important;
-    transition: 0.5s;
+  filter: opacity(50%);
+  filter: saturate(30%);
+  color: #de1b85 !important;
+  transition: 0.5s;
 }
 
 #youtubeI:hover {
-    filter: opacity(50%);
-    filter: saturate(30%);
-    color: #c4302b !important;
-    transition: 0.5s;
+  filter: opacity(50%);
+  filter: saturate(30%);
+  color: #c4302b !important;
+  transition: 0.5s;
 }
 
 #linkedinI:hover {
-    filter: opacity(50%);
-    filter: saturate(30%);
-    color: #0e76a8 !important;
-    transition: 0.5s;
+  filter: opacity(50%);
+  filter: saturate(30%);
+  color: #0e76a8 !important;
+  transition: 0.5s;
 }
 
 /* HABILIDADES */
 
 .accordion-button:focus {
-    box-shadow: none !important;
+  box-shadow: none !important;
 }
 
 /* PROYECTOS DESTACADOS */
 
 .destacadosElmnt {
-    width: 7rem;
-    height: 7rem;
+  width: 7rem;
+  height: 7rem;
 }
 
 .row-proyectos {
-    padding-right: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* SOBRE MÍ */
 
 .row-sobre-mi {
-    height: 30rem;
+  height: 30rem;
 }
 
-.row-sobre-mi>div>img {
-    width: 30rem;
-    height: 30rem;
+.row-sobre-mi > div > img {
+  width: 30rem;
+  height: 30rem;
 }
 
 /* PIE DE PÁGINA */
 
 footer {
-    padding-top: 5rem;
+  padding-top: 5rem;
 }
 
 footer .badge {
-    padding: 0;
+  padding: 0;
 }
 
 .rrss_pie {
-    padding-bottom: 5rem;
+  padding-bottom: 5rem;
 }
 
-.navbar_pie>.row {
-    padding-bottom: 5rem;
+.navbar_pie > .row {
+  padding-bottom: 5rem;
 }
 
 .nav_pie {
-    width: 8rem;
-    height: 8rem;
-    margin: 0.2rem;
+  width: 8rem;
+  height: 8rem;
+  margin: 0.2rem;
 }
 
 .nav_pie_i1 {
-    font-size: 4rem;
-    margin: 2rem 0.5rem 0.5rem 1.2rem;
+  font-size: 4rem;
+  margin: 2rem 0.5rem 0.5rem 1.2rem;
 }
 
 .nav_pie_i2 {
-    font-size: 4rem;
-    margin: 2rem 0.5rem 0.5rem 1rem;
+  font-size: 4rem;
+  margin: 2rem 0.5rem 0.5rem 1rem;
 }
 
 .nav_pie_i3 {
-    font-size: 4rem;
-    margin: 2rem 0.5rem 0.5rem 0.8rem;
+  font-size: 4rem;
+  margin: 2rem 0.5rem 0.5rem 0.8rem;
 }
 
 .nav_pie_i4 {
-    font-size: 4rem;
-    margin: 2rem 0.5rem 0.5rem 2.5rem;
+  font-size: 4rem;
+  margin: 2rem 0.5rem 0.5rem 2.5rem;
 }
 
 .copy {
-    background-color: var(--azul_shw_dev);
-    cursor: default;
+  background-color: var(--azul_shw_dev);
+  cursor: default;
 }
