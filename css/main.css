@@ -10,6 +10,7 @@
   --css: #2965f1;
   --js: #f0db4f;
   --php: #787cb5;
+  --rubi: #AD1000;
   --csharp: #69f0ae;
   --net: #34abe5;
   --java: #ec2025;
@@ -26,15 +27,19 @@
   --node: #3c873a;
   --laravel: #fb503b;
   --symfony: #000;
+  --aspnet: #512BD4;
   --spring: #8bc34a;
   --django: #13563c;
   --flask: #000;
 
   --git: #f34f29;
+  --docker: #099CEC;
   --sass: #cc6699;
   --pug: #efcca3;
   --gulp: #eb4a4b;
-  --seo: #4486f7;
+  --seo: #44f7a1;
+  --atlassian: #0052CC;
+  --scrum: #40586F;
 }
 
 /* GENÉRICO */
@@ -64,6 +69,10 @@ li {
 
 .color_php {
   color: var(--php);
+}
+
+.color_rubi {
+  color: var(--rubi);
 }
 
 .color_csharp {
@@ -125,6 +134,10 @@ li {
   color: var(--symfony);
 }
 
+.color_aspnet {
+  color: var(--aspnet);
+}
+
 .color_spring {
   color: var(--spring);
 }
@@ -141,6 +154,10 @@ li {
   color: var(--git);
 }
 
+.color_docker {
+  color: var(--docker);
+}
+
 .color_sass {
   color: var(--sass);
 }
@@ -155,6 +172,14 @@ li {
 
 .color_seo {
   color: var(--seo);
+}
+
+.color_atlassian {
+  color: var(--atlassian);
+}
+
+.color_scrum {
+  color: var(--scrum);
 }
 
 .bg-dev {
@@ -237,6 +262,21 @@ li {
 
 .bg-php {
   background-color: var(--php);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.bg-rubi {
+  background-color: var(--rubi);
   filter: saturate(70%);
   background-image: linear-gradient(
     250deg,
@@ -475,6 +515,21 @@ li {
   );
 }
 
+.bg-aspnet {
+  background-color: var(--aspnet);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
 .bg-spring {
   background-color: var(--spring);
   filter: saturate(70%);
@@ -535,6 +590,21 @@ li {
   );
 }
 
+.bg-docker {
+  background-color: var(--docker);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
 .bg-sass {
   background-color: var(--sass);
   filter: saturate(70%);
@@ -582,6 +652,36 @@ li {
 
 .bg-seo {
   background-color: var(--seo);
+  filter: saturate(70%);
+  background-image: linear-gradient(
+    250deg,
+    rgba(140, 138, 138, 0.15) 25%,
+    transparent 25%,
+    transparent 20%,
+    rgba(0, 0, 0, 0.15) 20%,
+    rgba(0, 0, 0, 0.408) 75%,
+    transparent 75%,
+    transparent
+  );
+}
+
+.bg-atlassian {
+    background-color: var(--atlassian);
+    filter: saturate(70%);
+    background-image: linear-gradient(
+      250deg,
+      rgba(140, 138, 138, 0.15) 25%,
+      transparent 25%,
+      transparent 20%,
+      rgba(0, 0, 0, 0.15) 20%,
+      rgba(0, 0, 0, 0.408) 75%,
+      transparent 75%,
+      transparent
+    );
+}
+
+.bg-scrum {
+  background-color: var(--scrum);
   filter: saturate(70%);
   background-image: linear-gradient(
     250deg,
