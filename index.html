@@ -19,7 +19,18 @@
     <script language="javascript" type="text/javascript" src="js/home.js"></script>
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark ps-3 pe-3">
+    <div class="
+    alert alert-white alert-dismissible
+    fade
+    show
+    bg-fondo-alert
+    color_dev
+    cursor-default
+  " role="alert">
+        Actualizado el 13 de agosto del 2021<button type="button" class="btn-close" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+    </div>
     <header class="bg-transparent">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
             <div class="container-fluid">
@@ -34,8 +45,17 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mis_proyectos.html">Proyectos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Proyectos
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item text-light" href="proyectos_frontend.html">Front-end</a>
+                                </li>
+                                <li><a class="dropdown-item text-light" href="proyectos_backend.html">Back-end</a></li>
+                                <li><a class="dropdown-item text-light" href="proyectos_juegos.html">Juegos</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
@@ -45,13 +65,32 @@
             </div>
         </nav>
     </header>
+
+    <div orientation="left" class="rrss_panel">
+        <ul class="rrss_list">
+            <li><div onclick="window.scrollTo(0, 0);"><em class="fas fa-arrow-alt-circle-up fs-5 p-2 rrss_elm cursor-pointer"></em></div></li>
+            <li><a href="https://www.instagram.com/bohdeveloper/" target="_blank"><em
+                        class="fab fa-instagram rrss_elm fs-5 p-2"></em></a></li>
+            <li><a href="https://www.youtube.com/channel/UCh0Fl0weSTnGrlcFam4XrHg" target="_blank"><em
+                        class="fab fa-youtube rrss_elm fs-5 p-2"></em></a></li>
+            <li><a href="https://www.linkedin.com/in/bolazaba" target="_blank"><em
+                        class="fab fa-linkedin-in rrss_elm fs-5 p-2"></em></a></li>
+        </ul>
+    </div>
+
+    <div orientation="right" class="mail_panel">
+        <div class="mail_inn">
+            <a href="mailto:boh.developer.fullstack@gmail.com">boh.developer.fullstack@gmail.com</a>
+        </div>
+    </div>
+
     <article>
         <div class="row p-4 mt-5">
             <div class="col-sm-12 col-lg-4 position-relative">
                 <a href="sobre_mi.html"><span class="badge color_dev text-end nameAbsolute" id="infoMi">+ INFO
                         <br />SOBRE <br />MÍ</span></a>
                 <img id="boh" src="img/inicio/boh_bk.png" alt="boh" />
-                <h2 class="fs-1 text-white nameAbsolute" id="myname">BORJA O. H.</h2>
+                <h2 class="fs-1 text-white nameAbsolute cursor-default" id="myname">BORJA O. H.</h2>
                 <div class="fs-4 dev nameAbsolute"></div>
                 <div class="position-absolute presentRS">
                     <a href="https://www.instagram.com/bohdeveloper/" target="_blank"><em
@@ -62,30 +101,29 @@
                             class="fab fa-linkedin-in text-dark" id="linkedinI"></em></a>
                 </div>
             </div>
-            <div class="col-lg-8">
-                <div class="row">
-                    <div class="col-sm-6 col-xl-6">
-                        <h1 class="text-light texto_index">
-                            <strong class="color_dev">·</strong> Me dedico al desarrollo web
-                            tanto <strong>front-end</strong> como <strong>back-end</strong>, me
-                            fascina la tecnología y todo lo que tenga que ver con ella
-                            <strong class="color_dev">·</strong>
-                        </h1>
-                    </div>
-                    <div class="col-sm-6 col-xl-6 pb-5">
-                        <h1 class="text-light texto_index">
-                            <strong class="color_dev">·</strong> Actualmente estoy trabajando en
-                            varios proyectos propios enfocandome en desarrollar mis capacidades,
-                            siempre abierto a cualquier sugerencia, proposición o colaboración
-                            <strong class="color_dev">·</strong>
-                        </h1>
-                    </div>
-                </div>
+            <div class="col-lg-8 pt-3 pb-5">
+
+                <h1 class="text-light texto_index cursor-default">
+                    <strong class="color_dev">·</strong> Me dedico al desarrollo web
+                    tanto <a href="proyectos_frontend.html" class="color_dev"><strong>front-end</strong></a>
+                    como <a href="proyectos_backend.html" class="color_dev"><strong>back-end</strong></a>, me
+                    fascina la tecnología y todo lo que tenga que ver con ella
+                    <strong class="color_dev">·</strong>
+                </h1>
+
+
+                <h1 class="text-light texto_index cursor-default">
+                    <strong class="color_dev">·</strong> Estoy enfocado en desarrollar mis capacidades,
+                    siempre abierto a <a href="contacto.html" class="color_dev"><strong>cualquier sugerencia,
+                            proposición o colaboración</strong></a>
+                    <strong class="color_dev">·</strong>
+                </h1>
+
             </div>
             <div class="col-md-6 mb-5">
                 <div class="skills border-end">
                     <h4 class="color_dev border-bottom">
-                        <span class="badge color_dev fs-5">MIS HABILIDADES</span>
+                        <span class="badge color_dev fs-5 cursor-default">MIS HABILIDADES</span>
                     </h4>
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                         <div class="accordion-item bg-dark">
@@ -98,7 +136,7 @@
                       justify-content-end
                     " type="button" data-bs-toggle="collapse" data-bs-target="#leng-collapse" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
-                                    <span class="badge text-white fs-6">LENGUAJES</span>
+                                    <span class="badge text-white fs-6 cursor-pointer">LENGUAJES</span>
                                 </button>
                             </h2>
 
@@ -106,7 +144,7 @@
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-dark">
                                     <div>
-                                        <span class="badge color_html">HTML</span>
+                                        <span class="badge color_html cursor-default">HTML</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -118,7 +156,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_css">CSS</span>
+                                        <span class="badge color_css cursor-default">CSS</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -130,7 +168,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_js">JAVASCRIPT</span>
+                                        <span class="badge color_js cursor-default">JAVASCRIPT</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -142,7 +180,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_java">JAVA</span>
+                                        <span class="badge color_java cursor-default">JAVA</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                               progress-bar
@@ -154,7 +192,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_php">PHP</span>
+                                        <span class="badge color_php cursor-default">PHP</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -166,7 +204,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_sql">SQL</span>
+                                        <span class="badge color_sql cursor-default">SQL</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -178,7 +216,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_php">C#</span>
+                                        <span class="badge color_php cursor-default">C#</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -190,7 +228,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_php">BV.NET</span>
+                                        <span class="badge color_php cursor-default">BV.NET</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -202,7 +240,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_python">PYTHON</span>
+                                        <span class="badge color_python cursor-default">PYTHON</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -214,7 +252,7 @@
                                         </div>
                                     </div>
                                     <div>
-                                        <span class="badge color_rubi">RUBI</span>
+                                        <span class="badge color_rubi cursor-default">RUBI</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -239,14 +277,14 @@
                       justify-content-end
                     " type="button" data-bs-toggle="collapse" data-bs-target="#frame-collapse" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
-                                    <span class="badge text-white fs-6">FRAMEWORKS</span>
+                                    <span class="badge text-white fs-6 cursor-pointer">FRAMEWORKS</span>
                                 </button>
                             </h2>
                             <div id="frame-collapse" class="accordion-collapse collapse" aria-labelledby="frame-acc"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-dark">
                                     <div>
-                                        <span class="badge color_bootstrap">BOOTSTRAP</span>
+                                        <span class="badge color_bootstrap cursor-default">BOOTSTRAP</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -259,7 +297,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_jquery">JQUERY</span>
+                                        <span class="badge color_jquery cursor-default">JQUERY</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -272,7 +310,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_spring">SPRING</span>
+                                        <span class="badge color_spring cursor-default">SPRING</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -285,7 +323,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_node">NODE</span>
+                                        <span class="badge color_node cursor-default">NODE</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -298,7 +336,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_react">REACT</span>
+                                        <span class="badge color_react cursor-default">REACT</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -311,7 +349,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_angular">ANGULAR</span>
+                                        <span class="badge color_angular cursor-default">ANGULAR</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -324,7 +362,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_vue">VUE.JS</span>
+                                        <span class="badge color_vue cursor-default">VUE.JS</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -337,7 +375,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_symfony">SYMFONY</span>
+                                        <span class="badge color_symfony cursor-default">SYMFONY</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -350,7 +388,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_laravel">LARAVEL</span>
+                                        <span class="badge color_laravel cursor-default">LARAVEL</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -363,7 +401,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_aspnet">ASP.NET</span>
+                                        <span class="badge color_aspnet cursor-default">ASP.NET</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -376,7 +414,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_bulma">BULMA</span>
+                                        <span class="badge color_bulma cursor-default">BULMA</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -389,7 +427,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_foundation">FOUNDATION</span>
+                                        <span class="badge color_foundation cursor-default">FOUNDATION</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -402,7 +440,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_django">DJANGO</span>
+                                        <span class="badge color_django cursor-default">DJANGO</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -415,7 +453,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_flask">FLASK</span>
+                                        <span class="badge color_flask cursor-default">FLASK</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -440,14 +478,14 @@
                       justify-content-end
                     " type="button" data-bs-toggle="collapse" data-bs-target="#otros-collapse" aria-expanded="false"
                                     aria-controls="flush-collapseOne">
-                                    <span class="badge text-white fs-6">OTROS CONOCIMIENTOS</span>
+                                    <span class="badge text-white fs-6 cursor-pointer">OTROS CONOCIMIENTOS</span>
                                 </button>
                             </h2>
                             <div id="otros-collapse" class="accordion-collapse collapse" aria-labelledby="otros-acc"
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-dark">
                                     <div>
-                                        <span class="badge color_git">GIT</span>
+                                        <span class="badge color_git cursor-default">GIT</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -458,9 +496,9 @@
                                                 aria-valuemax="100"></div>
                                         </div>
                                     </div>
-                                    
+
                                     <div>
-                                        <span class="badge color_seo">SEO</span>
+                                        <span class="badge color_seo cursor-default">SEO</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -473,7 +511,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_sass">SASS</span>
+                                        <span class="badge color_sass cursor-default">SASS</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -486,7 +524,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_pug">PUG</span>
+                                        <span class="badge color_pug cursor-default">PUG</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -499,7 +537,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_gulp">GULP</span>
+                                        <span class="badge color_gulp cursor-default">GULP</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -510,9 +548,9 @@
                                                 aria-valuemax="100"></div>
                                         </div>
                                     </div>
-                                    
+
                                     <div>
-                                        <span class="badge color_docker">DOCKER</span>
+                                        <span class="badge color_docker cursor-default">DOCKER</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -525,7 +563,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_atlassian">ATLASSIAN</span>
+                                        <span class="badge color_atlassian cursor-default">ATLASSIAN</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -538,7 +576,7 @@
                                     </div>
 
                                     <div>
-                                        <span class="badge color_scrum">SCRUM</span>
+                                        <span class="badge color_scrum cursor-default">SCRUM</span>
                                         <div class="progress m-1 bg-dark border-end">
                                             <div class="
                             progress-bar
@@ -553,22 +591,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="
-                    alert alert-dark alert-dismissible
-                    fade
-                    show
-                    bg-fondo-alert
-                    text-white
-                  " role="alert">
-                        Actualizado el 30/06/21<button type="button" class="btn-close" data-bs-dismiss="alert"
-                            aria-label="Close"></button>
-                    </div>
                 </div>
             </div>
 
             <div class="col-md-6">
                 <h4 class="color_dev border-bottom text-end border-start">
-                    <span class="badge color_dev fs-5">PROYECTOS DESTACADOS</span>
+                    <span class="badge color_dev fs-5 cursor-default">PROYECTOS DESTACADOS</span>
                 </h4>
                 <div class="accordion accordion-flush" id="accordionFlushExample">
                     <div class="accordion-item bg-dark">
@@ -576,7 +604,7 @@
                             <button class="accordion-button collapsed bg-dark color_dev" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#front-collapse" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                <span class="badge text-white fs-6">FRONT_END</span>
+                                <span class="badge text-white fs-6 cursor-pointer">FRONT_END</span>
                             </button>
                         </h2>
 
@@ -605,7 +633,7 @@
                             <button class="accordion-button collapsed bg-dark color_dev" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#backend-collapse" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                <span class="badge text-white fs-6">BACK_END</span>
+                                <span class="badge text-white fs-6 cursor-pointer">BACK_END</span>
                             </button>
                         </h2>
                         <div id="backend-collapse" class="accordion-collapse collapse" aria-labelledby="backend-acc"
@@ -633,7 +661,7 @@
                             <button class="accordion-button collapsed bg-dark color_dev" type="button"
                                 data-bs-toggle="collapse" data-bs-target="#juegos-collapse" aria-expanded="false"
                                 aria-controls="flush-collapseOne">
-                                <span class="badge text-white fs-6">JUEGOS</span>
+                                <span class="badge text-white fs-6 cursor-pointer">JUEGOS</span>
                             </button>
                         </h2>
                         <div id="juegos-collapse" class="accordion-collapse collapse" aria-labelledby="juegos-acc"
@@ -657,53 +685,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="
-                alert alert-dark alert-dismissible
-                fade
-                show
-                bg-fondo-alert
-                text-white
-              " role="alert">
-                    Actualizado el 30/06/21<button type="button" class="btn-close" data-bs-dismiss="alert"
-                        aria-label="Close"></button>
-                </div>
             </div>
         </div>
     </article>
-    <footer class="bg-pie">
-        <div class="container">
-            <div class="row p-3">
-                <div class="col-sm-7 col-md-6 col-lg-7 col-xl-9 rrss_pie">
-                    <h3><span class="badge color_dev fs-4 ps-2">SÍGUEME</span></h3>
-                    <a href="https://www.instagram.com/bohdeveloper/" target="_blank"><em
-                            class="fab fa-instagram color_dev fs-1 p-1"></em></a>
-                    <a href="https://www.youtube.com/channel/UCh0Fl0weSTnGrlcFam4XrHg" target="_blank"><em
-                            class="fab fa-youtube color_dev fs-1 p-1"></em></a>
-                    <a href="https://www.linkedin.com/in/bolazaba" target="_blank"><em
-                            class="fab fa-linkedin-in color_dev fs-1 p-1"></em></a>
-                </div>
-                <div class="col-sm-4 col-md-6 col-lg-5 col-xl-3 navbar_pie">
-                    <div class="row">
-                        <a class="col-sm-4 col-md-4 col-lg-6 col-xl-6 bg-dev nav_pie" href="contacto.html">
-                            <div>
-                                <em class="fas fa-phone-alt color_dev nav_pie_i1"></em>
-                            </div>
-                        </a>
-                        <a class="col-sm-4 col-md-4 col-lg-6 col-xl-6 bg-dev nav_pie" href="index.html">
-                            <div><em class="fas fa-home color_dev nav_pie_i2"></em></div>
-                        </a>
-                        <a class="col-sm-4 col-md-4 col-lg-6 col-xl-6 bg-dev nav_pie" href="mis_proyectos.html">
-                            <div><em class="fas fa-code color_dev nav_pie_i3"></em></div>
-                        </a>
-                        <a class="col-sm-4 col-md-4 col-lg-6 col-xl-6 bg-dev nav_pie" href="sobre_mi.html">
-                            <div><em class="fas fa-info color_dev nav_pie_i4"></em></div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="text-center p-4 copy color_dev">© 2021 Borja O. H.</div>
-    </footer>
+    <div class="text-center p-1 copy color_dev">© 2021 Borja O. H.</div>
 </body>
 
 </html>

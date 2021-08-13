@@ -91,4 +91,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   next()
 
+
+
+  function scrollToTop() {
+    $(window).scrollTop(0);
+  }
+
 });
