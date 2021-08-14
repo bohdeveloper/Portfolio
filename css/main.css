@@ -51,6 +51,44 @@ li {
   color: #212429;
 }
 
+.cursor-default {
+  cursor: default;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.contenedor::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.contenedor::-webkit-scrollbar:vertical {
+  width:10px; 
+}
+
+.contenedor::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.contenedor::-webkit-scrollbar-thumb {
+  background-color: var(--azul_dev);
+  border-radius: 20px;
+}
+
+.contenedor::-webkit-scrollbar-track {
+  border-radius: 10px;  
+}
+
+.contenedor {
+  scrollbar-color: var(--azul_dev);
+  scrollbar-width: thin;
+}
+
 .color_dev {
   color: var(--azul_dev);
 }
@@ -709,14 +747,6 @@ body {
   width: 100%; height: auto;
 /*   background-image: url(../img/background.jpg);
   background-repeat: no-repeat; */
-}
-
-.cursor-default {
-  cursor: default;
-}
-
-.cursor-pointer {
-  cursor: pointer;
 }
 
 /* NAV */
