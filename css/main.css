@@ -923,16 +923,6 @@ header {
   padding-right: 0 !important;
 }
 
-/* SOBRE MÍ */
-
-.row-sobre-mi {
-  height: 30rem;
-}
-
-.row-sobre-mi > div > img {
-  width: 30rem;
-  height: 30rem;
-}
 
 /* PIE DE PÁGINA */
 
