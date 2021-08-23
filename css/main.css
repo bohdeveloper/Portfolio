@@ -935,6 +935,12 @@ header {
 
 /* CONTACTO */
 
+.capa-anti-eventos {
+  height: 30rem;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
 
 
 /* PIE DE PÁGINA */
