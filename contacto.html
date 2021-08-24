@@ -93,10 +93,12 @@
                             HOLA<em class="color_dev">_</em>MUNDO <em class="color_dev">_________</em>
                         </h1>
                         <h1 class="text-light texto_index cursor-default p-5">
-                            <strong class="color_dev">·</strong> Estoy interesado en proyectos ambiciosos <strong class="color_dev">·</strong> <br><br>
-                            <strong class="color_dev">·</strong> Oportunidades freelance <strong class="color_dev">·</strong> <br><br> <strong
-                                class="color_dev">·</strong> Sugerencias laborales <strong class="color_dev">·</strong> <br><br><strong
-                                class="color_dev">·</strong> Cualquier pregunta o colsulta, estoy a tu disposición
+                            <strong class="color_dev">·</strong> Estoy interesado en proyectos ambiciosos <strong
+                                class="color_dev">·</strong> <br><br>
+                            <strong class="color_dev">·</strong> Oportunidades freelance <strong
+                                class="color_dev">·</strong> <br><br> <strong class="color_dev">·</strong> Sugerencias
+                            laborales <strong class="color_dev">·</strong> <br><br><strong class="color_dev">·</strong>
+                            Cualquier pregunta o colsulta, estoy a su disposición
                             <strong class="color_dev">·</strong>
                         </h1>
                         <div class="row d-flex justify-content-end ps-5">
@@ -114,11 +116,11 @@
 
                 </div>
                 <div class="col-md-6 pt-5 position-relative">
-                    <div class="capa-anti-eventos w-100" onclick="style.display='none'">
-                        <img src="" alt="mi ubicación"> <!-- Icono de mi ubicación -->
+                    <p class="text-white" id="reset-ubi" onclick="ponerCapa();">Volver a mostrar mi ubicación</p>
+                    <div class="capa-anti-eventos w-100" id="capa-anti-eventos" onclick="quitarCapa();">
+                        <img src="img/icono_boh.png" alt="mi ubicación" id="icono-ubi">
                     </div>
                     <div id="map" style="height: 30rem;" class="w-100">
-                        <p class="text-white">Mostrar mi ubicación</p> <!-- Cuando viaje por el mapa pueda recargar la página -->
                     </div>
                 </div>
             </div>
@@ -128,13 +130,33 @@
         <div class="text-center p-1 color_dev">© 2021 Borja O. H.</div>
     </footer>
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYm9oZGV2ZWxvcGVyIiwiYSI6ImNrc244aDA5bTFtajEyd294amVnaXpmYXEifQ.nxG1rsTwVVVIgTK5z8qa5A';
-        const map = new mapboxgl.Map({
-            container: 'map', // container ID
-            style: 'mapbox://styles/bohdeveloper/cksnb160f0pu617lqtcaxl9wa', // style URL
-            center: [-1.780, 43.336], // starting position [lng, lat]
-            zoom: 12 // starting zoom
-        });
+        const resetUbi = document.getElementById('reset-ubi');
+        const capaAntiEventos = document.getElementById('capa-anti-eventos');
+
+        resetUbi.style.display = 'none';
+
+        function quitarCapa() {
+            capaAntiEventos.style.display = 'none';
+            resetUbi.style.display = 'block';
+        }
+
+        function ponerCapa() {
+
+            /* QUEDA FEO EL EVENTO, PONER OTRA CAPA CON UN EFECTO MIENTRAS CARGA EL MAPA */
+
+            const map = new mapboxgl.Map({
+                container: 'map', // container ID
+                style: 'mapbox://styles/bohdeveloper/cksnb160f0pu617lqtcaxl9wa', // style URL
+                center: [-1.780, 43.336], // starting position [lng, lat]
+                /* Ubicación exacta: -1.799, 43.336 */
+                zoom: 12 // starting zoom
+            });
+
+            capaAntiEventos.style.display = 'block';
+            resetUbi.style.display = 'none';
+
+        }
+
     </script>
 </body>
 

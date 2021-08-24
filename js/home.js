@@ -101,11 +101,22 @@ document.addEventListener("DOMContentLoaded", function () {
 
   }
 
-
-
   // ——————————————————————————————————————————————————
   // Mapa contacto
   // ——————————————————————————————————————————————————
+
+  /* Mapbox script */
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYm9oZGV2ZWxvcGVyIiwiYSI6ImNrc244aDA5bTFtajEyd294amVnaXpmYXEifQ.nxG1rsTwVVVIgTK5z8qa5A';
+  const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: 'mapbox://styles/bohdeveloper/cksnb160f0pu617lqtcaxl9wa', // style URL
+      center: [-1.780, 43.336], // starting position [lng, lat]
+      /* Ubicación exacta: -1.799, 43.336 */
+      zoom: 12 // starting zoom
+  });
+
+
+
 
 
 });
