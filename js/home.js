@@ -108,15 +108,94 @@ document.addEventListener("DOMContentLoaded", function () {
   /* Mapbox script */
   mapboxgl.accessToken = 'pk.eyJ1IjoiYm9oZGV2ZWxvcGVyIiwiYSI6ImNrc244aDA5bTFtajEyd294amVnaXpmYXEifQ.nxG1rsTwVVVIgTK5z8qa5A';
   const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/bohdeveloper/cksnb160f0pu617lqtcaxl9wa', // style URL
+    center: [-1.780, 43.336], // starting position [lng, lat]
+    /* Ubicación exacta: -1.799, 43.336 */
+    zoom: 12 // starting zoom
+  });
+
+  /* Eventos interactivos */
+
+  /* Referencias */
+  const mapReset = document.getElementById('map-reset');
+  const capaAntiEventos = document.getElementById('capa-anti-eventos');
+  const capaBloqueoMapa = document.getElementById('capa-bloqueo-mapa');
+  const capaCarga = document.getElementById('capa-carga');
+  const mapOff = document.getElementById('map-off');
+  const mapOn = document.getElementById('map-on');
+  const mapa = document.getElementById('map');
+
+  /* Estado inicial */
+  mapReset.style.display = 'none';
+  mapOff.style.display = 'none';
+  mapOn.style.display = 'none';
+  capaBloqueoMapa.style.display = 'none';
+  capaCarga.style.display = 'block';
+
+  setTimeout(function () {
+    capaCarga.style.display = 'none';
+    capaAntiEventos.style.display = 'block';
+  }, 1000);
+
+  /* Eventos */
+  capaAntiEventos.addEventListener('mouseover', hoverInCapa);
+  capaAntiEventos.addEventListener('mouseout', hoverOutCapa);
+  capaAntiEventos.addEventListener('click', quitarCapa);
+  mapReset.addEventListener('click', ponerCapa);
+  mapOn.addEventListener('click', bloquearMapa);
+  mapOff.addEventListener('click', desbloquearMapa);
+
+  /* Funciones */
+  function hoverInCapa() {
+    mapa.classList.add('filter-map');
+    mapa.style.transition = '0.3s';
+  }
+
+  function hoverOutCapa() {
+    mapa.classList.remove('filter-map');
+    mapa.style.transition = '0.3s';
+  }
+
+  function quitarCapa() {
+    capaAntiEventos.style.display = 'none';
+    mapReset.style.display = 'block';
+    mapOn.style.display = 'block';
+  }
+
+  function ponerCapa() {
+    capaCarga.style.display = 'block';
+    mapOn.style.display = 'none';
+    mapReset.style.display = 'none';
+    mapOff.style.display = 'none';
+    mapOn.style.display = 'none';
+
+    const map = new mapboxgl.Map({
       container: 'map', // container ID
       style: 'mapbox://styles/bohdeveloper/cksnb160f0pu617lqtcaxl9wa', // style URL
       center: [-1.780, 43.336], // starting position [lng, lat]
       /* Ubicación exacta: -1.799, 43.336 */
       zoom: 12 // starting zoom
-  });
+    });
 
+    setTimeout(function () {
+      capaCarga.style.display = 'none';
+      capaAntiEventos.style.display = 'block';
+    }, 1000);
 
+  }
+  
 
+  function bloquearMapa() {
+    capaBloqueoMapa.style.display = 'block';
+    mapOff.style.display = 'block';
+    mapOn.style.display = 'none';
+  } 
 
+  function desbloquearMapa() {
+    capaBloqueoMapa.style.display = 'none';
+    mapOff.style.display = 'none';
+    mapOn.style.display = 'block';
+  } 
 
 });

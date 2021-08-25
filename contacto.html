@@ -116,11 +116,31 @@
 
                 </div>
                 <div class="col-md-6 pt-5 position-relative">
-                    <p class="text-white" id="reset-ubi" onclick="ponerCapa();">Volver a mostrar mi ubicación</p>
-                    <div class="capa-anti-eventos w-100" id="capa-anti-eventos" onclick="quitarCapa();">
-                        <img src="img/icono_boh.png" alt="mi ubicación" id="icono-ubi">
+                    <div orientation="left" class="skina-izq">
+                        <div class="map-on text-success p-3" id="map-on">
+                            <em class="fas fa-power-off fs-3"></em>
+                        </div>
+                        <div class="map-off text-danger p-3" id="map-off">
+                            <em class="fas fa-power-off fs-3"></em>
+                        </div>
                     </div>
-                    <div id="map" style="height: 30rem;" class="w-100">
+                    <div orientation="right" class="skina-der">
+                        <div class="map-reset text-success p-3" id="map-reset">
+                            <em class="fas fa-redo-alt fs-3"></em>
+                        </div>
+                    </div>
+                    <div class="capa-bloqueo-mapa bg-transparent" id="capa-bloqueo-mapa"></div>
+                    <div class="capa-anti-eventos bg-transparent" id="capa-anti-eventos">
+                        <a href="https://www.instagram.com/bohdeveloper/" target="_blank"><img src="img/icono_boh.png" alt="mi ubicación" id="icono-ubi"></a>
+                    </div>
+                    <div class="capa-carga bg-dark" id="capa-carga">
+                        <div class="loader">
+                            <div class="inner one"></div>
+                            <div class="inner two"></div>
+                            <div class="inner three"></div>
+                        </div>
+                    </div>
+                    <div id="map" style="height: 30rem;" class="w-100 rounded">
                     </div>
                 </div>
             </div>
@@ -129,35 +149,6 @@
     <footer class="bg-pie copy">
         <div class="text-center p-1 color_dev">© 2021 Borja O. H.</div>
     </footer>
-    <script>
-        const resetUbi = document.getElementById('reset-ubi');
-        const capaAntiEventos = document.getElementById('capa-anti-eventos');
-
-        resetUbi.style.display = 'none';
-
-        function quitarCapa() {
-            capaAntiEventos.style.display = 'none';
-            resetUbi.style.display = 'block';
-        }
-
-        function ponerCapa() {
-
-            /* QUEDA FEO EL EVENTO, PONER OTRA CAPA CON UN EFECTO MIENTRAS CARGA EL MAPA */
-
-            const map = new mapboxgl.Map({
-                container: 'map', // container ID
-                style: 'mapbox://styles/bohdeveloper/cksnb160f0pu617lqtcaxl9wa', // style URL
-                center: [-1.780, 43.336], // starting position [lng, lat]
-                /* Ubicación exacta: -1.799, 43.336 */
-                zoom: 12 // starting zoom
-            });
-
-            capaAntiEventos.style.display = 'block';
-            resetUbi.style.display = 'none';
-
-        }
-
-    </script>
 </body>
 
 </html>
