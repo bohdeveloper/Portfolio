@@ -928,10 +928,15 @@ header {
 }
 
 /* PROYECTOS */
-
 .muestra_proyecto {
   width: 100%; height: 100%;
 } 
+
+.skina-git {
+  position: absolute;
+  right: 0.2rem;
+  z-index: 20;
+}
 
 /* CONTACTO */
 
