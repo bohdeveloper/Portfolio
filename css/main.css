@@ -936,13 +936,13 @@ header {
 .muestra_btn {
   filter: brightness(50%);
   filter: saturate(50%);
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .muestra_btn:hover {
   filter: brightness(100%);
-  filter: saturate(100%);
-  transition: 0.5s;
+  filter: saturate(150%);
+  transition: 0.3s;
 }
 
 .skina_git {
