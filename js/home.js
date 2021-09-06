@@ -3,9 +3,23 @@ document.addEventListener("DOMContentLoaded", function () {
   const inicio = document.getElementById('inicio');
   const proyectos = document.getElementById('proyectos');
   const contacto = document.getElementById('contacto');
+  
+  const actu = document.getElementById('actu');
+  const actuchecker = document.getElementById('actuchecker');
+  actuchecker.addEventListener('click', actuCookie);
+
+  function actuCookie() {
+    var actucheck = true;
+    document.cookie = "actucheck=" + encodeURIComponent( actucheck );
+  }
+
+      var cookies = document.cookie;
+      if (cookies) {
+        actu.style.display = 'none';
+      }
 
   if (inicio) {
-
+    
     // ——————————————————————————————————————————————————
     // TextDev
     // ——————————————————————————————————————————————————
