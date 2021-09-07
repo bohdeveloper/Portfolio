@@ -934,8 +934,8 @@ header {
 }
 
 .muestra_btn {
-  filter: brightness(50%);
-  filter: saturate(50%);
+  filter: brightness(70%);
+  filter: saturate(70%);
   transition: 0.3s;
 }
 
