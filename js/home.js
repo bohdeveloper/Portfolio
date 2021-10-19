@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /* FRASE */
 
     const phrases = [
-      'SOY',
+      'Y SOY',
       'DESARROLLADOR',
       'FULL STACK',
     ]
