@@ -814,12 +814,13 @@ header {
 
 #myname {
   top: 17rem;
+  left: 2rem;
 }
 
 .dev {
   color: var(--azul_dev);
-  top: 19rem;
-  left: 2rem;
+  top: 18.8rem;
+  left: 7rem;
 }
 
 .rrss_panel {
