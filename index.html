@@ -14,6 +14,7 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
     <script src="js/bootstrap.bundle.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/home.js"></script>
@@ -29,8 +30,8 @@
     color_dev
     cursor-default
   " role="alert">
-        Actualizado el 25 de agosto del 2021<button type="button" class="btn-close" id="actuchecker" data-bs-dismiss="alert"
-            aria-label="Close"></button>
+        Actualizado el 25 de agosto del 2021<button type="button" class="btn-close" id="actuchecker"
+            data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
     <header class="bg-transparent">
         <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
@@ -118,6 +119,7 @@
                       bg-dark
                       color_dev
                       justify-content-end
+                      frontend
                     " type="button" data-bs-toggle="collapse" data-bs-target="#front_end_collapse"
                                     aria-expanded="false" aria-controls="flush-collapseOne">
                                     <span class="badge text-white fs-4 cursor-pointer">FRONT_END</span>
@@ -128,99 +130,81 @@
                                 data-bs-parent="#accordionFlushExample">
                                 <div class="accordion-body bg-dark">
 
-                                    <h5><span class="badge text-white ps-3">LENGUAJES</span><h5>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_html cursor-default">HTML</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                                progress-bar
-                                progress-bar-striped
-                                progress-bar-animated
-                                bg-html
-                              " role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
+                                    <h5><span class="badge text-white ps-3">LENGUAJES</span>
+                                        <h5>
+                                            <div class="row">
+                                                <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                    <div class="circular">
+                                                        <div class="inner"></div>
+                                                        <div class="number num_html">HTML5</div>
+                                                        <div class="circle">
+                                                            <div class="bar left_html">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                            <div class="bar right_html">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                    <div class="circular">
+                                                        <div class="inner"></div>
+                                                        <div class="number num_css">CSS3</div>
+                                                        <div class="circle">
+                                                            <div class="bar left_css">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                            <div class="bar right_css">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                    <div class="circular">
+                                                        <div class="inner"></div>
+                                                        <div class="number num_js">JS</div>
+                                                        <div class="circle">
+                                                            <div class="bar left_js">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                            <div class="bar right_js">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_css cursor-default">CSS</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                                progress-bar
-                                progress-bar-striped
-                                progress-bar-animated
-                                bg-css
-                              " role="progressbar" style="width: 78%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
+                                            <h5><span class="badge text-white ps-3 pt-5 pb-3">FRAMEWORKS</span></h5>
+                                            <div class="row">
+                                                <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                    <div class="circular">
+                                                        <div class="inner"></div>
+                                                        <div class="number num_bootstrap">BTRAP</div>
+                                                        <div class="circle">
+                                                            <div class="bar left_bootstrap">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                            <div class="bar right_bootstrap">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_js cursor-default">JAVASCRIPT</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                                progress-bar
-                                progress-bar-striped
-                                progress-bar-animated
-                                bg-js
-                              " role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                    <h5><span class="badge text-white ps-3 pt-5 pb-3">FRAMEWORKS</span></h5>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_bootstrap cursor-default">BOOTSTRAP</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-bootstrap
-                        " role="progressbar" style="width: 90%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_jquery cursor-default">JQUERY</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-jquery
-                        " role="progressbar" style="width: 80%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_bulma cursor-default">BULMA</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-bulma
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span
-                                                    class="badge color_foundation cursor-default">FOUNDATION</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-foundation
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
+                                                <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                    <div class="circular">
+                                                        <div class="inner"></div>
+                                                        <div class="number num_jquery">JQUERY</div>
+                                                        <div class="circle">
+                                                            <div class="bar left_jquery">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                            <div class="bar right_jquery">
+                                                                <div class="progress"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                 </div>
@@ -248,230 +232,70 @@
                                     <div class="accordion-body bg-dark">
 
 
-                                    <h5><span class="badge text-white ps-3">LENGUAJES</span><h5>
+                                        <h5><span class="badge text-white ps-3">LENGUAJES</span>
+                                            <h5>
 
-                                            <div class="ps-3">
-                                                <span class="badge color_java cursor-default">JAVA</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                                progress-bar
-                                progress-bar-striped
-                                progress-bar-animated
-                                bg-java
-                            " role="progressbar" style="width: 65%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
+                                                <div class="row">
+                                                    <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                        <div class="circular">
+                                                            <div class="inner"></div>
+                                                            <div class="number num_java">JAVA</div>
+                                                            <div class="circle">
+                                                                <div class="bar left_java">
+                                                                    <div class="progress"></div>
+                                                                </div>
+                                                                <div class="bar right_java">
+                                                                    <div class="progress"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                        <div class="circular">
+                                                            <div class="inner"></div>
+                                                            <div class="number num_php">PHP</div>
+                                                            <div class="circle">
+                                                                <div class="bar left_php">
+                                                                    <div class="progress"></div>
+                                                                </div>
+                                                                <div class="bar right_php">
+                                                                    <div class="progress"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                        <div class="circular">
+                                                            <div class="inner"></div>
+                                                            <div class="number num_sql">SQL</div>
+                                                            <div class="circle">
+                                                                <div class="bar left_sql">
+                                                                    <div class="progress"></div>
+                                                                </div>
+                                                                <div class="bar right_sql">
+                                                                    <div class="progress"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_php cursor-default">PHP</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-php
-                            " role="progressbar" style="width: 35%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_sql cursor-default">SQL</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-sql
-                            " role="progressbar" style="width: 23%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_csharp cursor-default">C#</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-csharp
-                            " role="progressbar" style="width: 1%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_net cursor-default">BV.NET</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-net
-                            " role="progressbar" style="width: 1%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_python cursor-default">PYTHON</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-python
-                            " role="progressbar" style="width: 1%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="ps-3">
-                                                <span class="badge color_rubi cursor-default">RUBI</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-rubi
-                            " role="progressbar" style="width: 1%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                    <h5><span class="badge text-white ps-3 pt-5 pb-3">FRAMEWORKS</span>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_spring cursor-default">SPRING</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-spring
-                        " role="progressbar" style="width: 20%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_node cursor-default">NODE</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-node
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_react cursor-default">REACT</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-react
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_angular cursor-default">ANGULAR</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-angular
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_vue cursor-default">VUE.JS</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-vue
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_symfony cursor-default">SYMFONY</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-symfony
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_laravel cursor-default">LARAVEL</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-laravel
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_aspnet cursor-default">ASP.NET</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-aspnet
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_django cursor-default">DJANGO</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-django
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="ps-3">
-                                                <span class="badge color_flask cursor-default">FLASK</span>
-                                                <div class="progress m-1 bg-dark border-end">
-                                                    <div class="
-                        progress-bar
-                        progress-bar-striped
-                        progress-bar-animated
-                        bg-flask
-                        " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                        aria-valuemax="100"></div>
-                                                </div>
-                                            </div>
+                                                <h5><span class="badge text-white ps-3 pt-5 pb-3">FRAMEWORKS</span>
+                                                    <div class="row">
+                                                        <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                            <div class="circular">
+                                                                <div class="inner"></div>
+                                                                <div class="number num_spring">SPRING</div>
+                                                                <div class="circle">
+                                                                    <div class="bar left_spring">
+                                                                        <div class="progress"></div>
+                                                                    </div>
+                                                                    <div class="bar right_spring">
+                                                                        <div class="progress"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                     </div>
                                 </div>
@@ -487,114 +311,68 @@
                       justify-content-end
                     " type="button" data-bs-toggle="collapse" data-bs-target="#otros-collapse" aria-expanded="false"
                                         aria-controls="flush-collapseOne">
-                                        <span class="badge text-white fs-4 cursor-pointer">OTROS
-                                            CONOCIMIENTOS</span>
+                                        <span class="badge text-white fs-4 cursor-pointer">OTRAS</span>
                                     </button>
                                 </h2>
                                 <div id="otros-collapse" class="accordion-collapse collapse" aria-labelledby="otros-acc"
                                     data-bs-parent="#accordionFlushExample">
                                     <div class="accordion-body bg-dark">
-                                        <div class="ps-3">
-                                            <span class="badge color_git cursor-default">GIT - TERMINAL DE COMANDOS</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-git
-                          " role="progressbar" style="width: 70%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                        <div class="row">
+                                            <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                <div class="circular">
+                                                    <div class="inner"></div>
+                                                    <div class="number num_terminal">CMD</div>
+                                                    <div class="circle">
+                                                        <div class="bar left_terminal">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                        <div class="bar right_terminal">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_seo cursor-default">SEO</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-seo
-                          " role="progressbar" style="width: 37%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                            <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                <div class="circular">
+                                                    <div class="inner"></div>
+                                                    <div class="number num_git">GIT</div>
+                                                    <div class="circle">
+                                                        <div class="bar left_git">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                        <div class="bar right_git">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_sass cursor-default">SASS</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-sass
-                          " role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                            <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                <div class="circular">
+                                                    <div class="inner"></div>
+                                                    <div class="number num_docker">DOCKER</div>
+                                                    <div class="circle">
+                                                        <div class="bar left_docker">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                        <div class="bar right_docker">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_pug cursor-default">PUG</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-pug
-                          " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_gulp cursor-default">GULP</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-gulp
-                          " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_docker cursor-default">DOCKER</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-docker
-                          " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_atlassian cursor-default">ATLASSIAN</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-atlassian
-                          " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
-                                            </div>
-                                        </div>
-
-                                        <div class="ps-3">
-                                            <span class="badge color_scrum cursor-default">SCRUM</span>
-                                            <div class="progress m-1 bg-dark border-end">
-                                                <div class="
-                            progress-bar
-                            progress-bar-striped
-                            progress-bar-animated
-                            bg-scrum
-                          " role="progressbar" style="width: 2%" aria-valuenow="10" aria-valuemin="0"
-                                                    aria-valuemax="100"></div>
+                                            <div class="col-5 col-sm-3 col-lg-3 p-3">
+                                                <div class="circular">
+                                                    <div class="inner"></div>
+                                                    <div class="number num_seo">SEO</div>
+                                                    <div class="circle">
+                                                        <div class="bar left_seo">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                        <div class="bar right_seo">
+                                                            <div class="progress"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -612,29 +390,23 @@
 
                 <div class="row p-3">
                     <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
-                        <a href="https://github.com/bohdeveloper/Snake" target="_blank" data-toggle="tooltip"
-                        data-placement="top" title="Open in GitHub" class="muestra_btn">
-                        <video class="destacadosElmnt" autoplay muted loop>
-                            <source src="video/video_snake.mp4" type="video/mp4">
-                        </video>
-                    </a>
+                        <a href="https://github.com/bohdeveloper/PyBank" target="_blank" data-toggle="tooltip"
+                            data-placement="top" title="Open in GitHub" class="muestra_btn github">
+                            <img src="img/proyectos/pybank.png" class="muestra_proyecto" alt="PyBank" id="pybank_img">
+                        </a>
                     </div>
                     <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
-                        <img class="destacadosElmnt" src="https://via.placeholder.com/300.png/000" alt="" />
+                        <a href="https://github.com/bohdeveloper/PizzaSaturn" target="_blank" data-toggle="tooltip"
+                            data-placement="top" title="Open in GitHub" class="muestra_btn github">
+                            <img src="img/proyectos/pizzasaturn.png" class="muestra_proyecto" alt="PizzaSaturn"
+                                id="pizzasaturn_img">
+                        </a>
                     </div>
                     <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
-                        <img class="destacadosElmnt" src="https://via.placeholder.com/300.png/000" alt="" />
-                    </div>
-
-
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
-                        <img class="destacadosElmnt" src="https://via.placeholder.com/300.png/000" alt="" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
-                        <img class="destacadosElmnt" src="https://via.placeholder.com/300.png/000" alt="" />
-                    </div>
-                    <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
-                        <img class="destacadosElmnt" src="https://via.placeholder.com/300.png/000" alt="" />
+                        <a href="https://codepen.io/bohdeveloper/pen/QWdMrpR" target="_blank" data-toggle="tooltip"
+                            data-placement="top" title="Open in CodePen" class="muestra_btn codepen">
+                            <img src="img/proyectos/snake.png" class="muestra_proyecto" alt="Snake" id="snake_img">
+                        </a>
                     </div>
                 </div>
             </div>
