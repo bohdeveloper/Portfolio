@@ -52,6 +52,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="contacto.html">Contacto</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link cursor-pointer" onclick="descargarPDF();">Currículum</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -140,6 +143,12 @@
     <footer class="bg-pie copy">
         <div class="text-center p-1 color_dev">© 2021 Borja O. H.</div>
     </footer>
+    <script>
+        function descargarPDF() {
+            var url_pdf = "pdf/cv_bohdeveloper.pdf";
+            window.open(url_pdf, '_blank');
+        }
+    </script>
 </body>
 
 </html>
