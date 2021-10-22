@@ -118,8 +118,7 @@ li {
 }
 
 .borji:hover {
-  cursor: url(../img/contacto/bohdeveloper.png),
-    auto;
+  cursor: url(../img/contacto/bohdeveloper.png), auto;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -604,7 +603,6 @@ header {
 
 /* PROYECTOS DESTACADOS */
 
-
 .destacadosElmnt {
   width: 8rem;
   height: 8rem;
@@ -617,12 +615,10 @@ header {
 /* PROYECTOS */
 
 .github:hover {
-  cursor: url(../img/proyectos/gh.png),
-    auto;
+  cursor: url(../img/proyectos/gh.png), auto;
 }
 .codepen:hover {
-  cursor: url(../img/proyectos/cp.png),
-    auto;
+  cursor: url(../img/proyectos/cp.png), auto;
 }
 
 .muestra_proyecto {
@@ -641,7 +637,6 @@ header {
   filter: saturate(150%);
   transition: 0.3s;
 }
-
 
 /* CONTACTO */
 

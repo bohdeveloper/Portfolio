@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   if (inicio) {
-    
+
 
     // ——————————————————————————————————————————————————
     // TextDev
