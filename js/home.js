@@ -93,9 +93,8 @@ document.addEventListener("DOMContentLoaded", function () {
     /* FRASE */
 
     const phrases = [
-      'Y SOY',
-      'DESARROLLADOR',
-      'FULL STACK',
+      '· DESARROLLADOR',
+      '· FULL STACK',
     ]
 
     const fx = new TextScramble(el)
@@ -103,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let counter = 0
     const next = () => {
       fx.setText(phrases[counter]).then(() => {
-        setTimeout(next, 500)
+        setTimeout(next, 1000)
       })
       counter = (counter + 1) % phrases.length
     }
