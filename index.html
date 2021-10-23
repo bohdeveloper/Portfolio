@@ -12,6 +12,7 @@
     <meta name="keywords" content="developer, desarrollador, programador, full stack, página web, aplicación" />
     <meta name="robots" content="index, follow" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -20,7 +21,7 @@
     <script language="javascript" type="text/javascript" src="js/home.js"></script>
 </head>
 
-<body class="bg-dark ps-3 pe-3 contenedor">
+<body class="bg-dark ps-3 pe-3 pt-3 contenedor">
     <input type="hidden" id="inicio">
     <div id="actu" class="
     alert alert-white alert-dismissible
@@ -85,7 +86,7 @@
         </div>
     </div>
 
-    <article>
+    <article class="index_present">
         <div class="row p-4">
             <div class="col-sm-12 col-lg-4 position-relative">
                 <img id="boh" src="img/inicio/bohlight.png" alt="boh" class="ms-3" />
@@ -93,19 +94,19 @@
                 <div class="h5 dev nameAbsolute cursor-default"></div>
             </div>
             <div class="col-lg-8 mt-5 pb-5">
-                <h1 class="text-light texto_index cursor-default">
+                <h2 class="text-light texto_index cursor-default">
                     <strong class="color_dev">·</strong> Me dedico al desarrollo web
                     tanto <a href="proyectos.html" class="color_dev"><strong>front-end</strong></a>
                     como <a href="proyectos.html" class="color_dev"><strong>back-end</strong></a>, me
                     fascina la tecnología y todo lo que tenga que ver con ella
                     <strong class="color_dev">·</strong>
-                </h1>
-                <h1 class="text-light texto_index cursor-default">
+                </h2>
+                <h2 class="text-light texto_index cursor-default">
                     <strong class="color_dev">·</strong> Estoy enfocado en desarrollar mis capacidades,
                     siempre abierto a <a href="contacto.html" class="color_dev"><strong>cualquier sugerencia,
                             proposición o colaboración</strong></a>
                     <strong class="color_dev">·</strong>
-                </h1>
+                </h2>
             </div>
             <div class="col-md-6 mt-5 mb-5">
                 <div class="skills border-end">
@@ -125,7 +126,7 @@
                       frontend
                     " type="button" data-bs-toggle="collapse" data-bs-target="#front_end_collapse"
                                     aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <span class="badge text-white fs-4 cursor-pointer">FRONT_END</span>
+                                    <span class="badge text-white fs-4 cursor-pointer animate__animated animate__backInLeft">FRONT_END</span>
                                 </button>
                             </h2>
 
@@ -224,9 +225,10 @@
                           bg-dark
                           color_dev
                           justify-content-end
+                          backend
                         " type="button" data-bs-toggle="collapse" data-bs-target="#back_end_collapse"
                                         aria-expanded="false" aria-controls="flush-collapseOne">
-                                        <span class="badge text-white fs-4 cursor-pointer">BACK_END</span>
+                                        <span class="badge text-white fs-4 cursor-pointer animate__animated animate__backInLeft">BACK_END</span>
                                     </button>
                                 </h2>
 
@@ -312,9 +314,10 @@
                       bg-dark
                       color_dev
                       justify-content-end
+                      otras
                     " type="button" data-bs-toggle="collapse" data-bs-target="#otros-collapse" aria-expanded="false"
                                         aria-controls="flush-collapseOne">
-                                        <span class="badge text-white fs-4 cursor-pointer">OTRAS</span>
+                                        <span class="badge text-white fs-4 cursor-pointer animate__animated animate__backInLeft">OTRAS</span>
                                     </button>
                                 </h2>
                                 <div id="otros-collapse" class="accordion-collapse collapse" aria-labelledby="otros-acc"
@@ -395,20 +398,20 @@
                     <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
                         <a href="https://github.com/bohdeveloper/PyBank" target="_blank" data-toggle="tooltip"
                             data-placement="top" title="Open in GitHub" class="muestra_btn github">
-                            <img src="img/proyectos/pybank.png" class="muestra_proyecto" alt="PyBank" id="pybank_img">
+                            <img src="img/proyectos/pybank.png" class="muestra_proyecto animate__animated animate__pulse" alt="PyBank" id="pybank_img">
                         </a>
                     </div>
                     <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
                         <a href="https://github.com/bohdeveloper/PizzaSaturn" target="_blank" data-toggle="tooltip"
                             data-placement="top" title="Open in GitHub" class="muestra_btn github">
-                            <img src="img/proyectos/pizzasaturn.png" class="muestra_proyecto" alt="PizzaSaturn"
+                            <img src="img/proyectos/pizzasaturn.png" class="muestra_proyecto animate__animated animate__pulse" alt="PizzaSaturn"
                                 id="pizzasaturn_img">
                         </a>
                     </div>
                     <div class="col-6 col-sm-4 col-md-6 col-lg-5 col-xl-4 p-3">
                         <a href="https://codepen.io/bohdeveloper/pen/QWdMrpR" target="_blank" data-toggle="tooltip"
                             data-placement="top" title="Open in CodePen" class="muestra_btn codepen">
-                            <img src="img/proyectos/snake.png" class="muestra_proyecto" alt="Snake" id="snake_img">
+                            <img src="img/proyectos/snake.png" class="muestra_proyecto animate__animated animate__pulse" alt="Snake" id="snake_img">
                         </a>
                     </div>
                 </div>

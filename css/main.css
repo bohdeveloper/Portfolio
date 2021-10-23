@@ -134,7 +134,7 @@ body {
 /* NAV */
 
 nav {
-  padding: 1rem 1rem 0rem 2rem !important;
+  padding: 1rem 1rem 0rem 1rem !important;
 }
 
 header > nav ul > li {
@@ -289,6 +289,16 @@ header {
 }
 
 /* HABILIDADES */
+
+.frontend:hover{
+  background-color: #115a7579 !important;
+}
+.backend:hover{
+  background-color: #115a7579 !important;
+}
+.otras:hover{
+  background-color: #115a7579 !important;
+}
 
 /* Barras de progreso */
 
@@ -781,6 +791,43 @@ header {
 /* Responsive */
 /* sm */
 @media (max-width: 540px) {
+  #actu {
+    font-size: 0.9rem;
+  }
+
+  .rrss_list::after {
+    display: none;
+  }
+  .mail_inn::after {
+    display: none;
+  }
+
+  /* Inicio */
+
+  #boh {
+    width: 17rem;
+  }
+
+  #myname {
+    top: 13rem;
+    left: 5rem;
+  }
+
+  .dev {
+    color: var(--azul_dev);
+    top: 17rem;
+    left: 5rem;
+  }
+
+  .texto_index {
+    max-width: 40rem;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+
+  /* Contacto */
+
   #icono-ubi {
     top: 10rem;
     left: 3rem;
