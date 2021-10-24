@@ -188,16 +188,18 @@ header {
 #boh {
   width: 23rem;
   height: auto;
+  padding-left: 3rem;
 }
 
 #myname {
-  top: 16.5rem;
+  top: 21rem;
   left: 5rem;
+  line-height: 25px;
 }
 
 .dev {
   color: var(--azul_dev);
-  top: 21rem;
+  top: 24.2rem;
   left: 5rem;
 }
 
@@ -290,13 +292,13 @@ header {
 
 /* HABILIDADES */
 
-.frontend:hover{
+.frontend:hover {
   background-color: #115a7579 !important;
 }
-.backend:hover{
+.backend:hover {
   background-color: #115a7579 !important;
 }
-.otras:hover{
+.otras:hover {
   background-color: #115a7579 !important;
 }
 
@@ -631,6 +633,15 @@ header {
   cursor: url(../img/proyectos/cp.png), auto;
 }
 
+.filtro_contrast {
+  filter: contrast(10%);
+}
+
+.filtro_contrast:hover {
+  filter: contrast(100%);
+  transition: 0.5s;
+}
+
 .muestra_proyecto {
   width: 100%;
   height: 100%;
@@ -806,17 +817,18 @@ header {
 
   #boh {
     width: 17rem;
+    padding-left: 0;
   }
 
   #myname {
-    top: 13rem;
-    left: 5rem;
+    top: 18rem;
+    left: 3rem;
   }
 
   .dev {
     color: var(--azul_dev);
-    top: 17rem;
-    left: 5rem;
+    top: 21rem;
+    left: 3rem;
   }
 
   .texto_index {
