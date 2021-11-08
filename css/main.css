@@ -363,7 +363,7 @@ header {
 .circle .left_html {
   z-index: 1;
   /*   Para regular subir deg de transform */
-  transform: rotate(50deg);
+  transform: rotate(10deg);
   background: var(--html);
 }
 
@@ -383,7 +383,7 @@ header {
 
 .circle .left_css {
   z-index: 1;
-  transform: rotate(70deg);
+  transform: rotate(35deg);
   background: var(--css);
 }
 
@@ -403,7 +403,7 @@ header {
 
 .circle .left_js {
   z-index: 1;
-  transform: rotate(130deg);
+  transform: rotate(45deg);
   background: var(--js);
 }
 
@@ -443,7 +443,7 @@ header {
 
 .circle .left_jquery {
   z-index: 1;
-  transform: rotate(110deg);
+  transform: rotate(45deg);
   background: var(--jquery);
 }
 
@@ -463,7 +463,7 @@ header {
 
 .circle .left_java {
   z-index: 1;
-  transform: rotate(80deg);
+  transform: rotate(40deg);
   background: var(--java);
 }
 
@@ -483,7 +483,7 @@ header {
 
 .circle .left_php {
   z-index: 1;
-  transform: rotate(165deg);
+  transform: rotate(50deg);
   background: var(--php);
 }
 
@@ -503,7 +503,7 @@ header {
 
 .circle .left_sql {
   z-index: 1;
-  transform: rotate(150deg);
+  transform: rotate(35deg);
   background: var(--sql);
 }
 
@@ -533,21 +533,41 @@ header {
   background: var(--spring);
 }
 
-/* Color TERMINAL */
+/* Color CMD */
 
-.num_terminal {
+.num_cmd {
   color: var(--scrum);
 }
 
-/* Rotación TERMINAL*/
+/* Rotación CMD*/
 
-.circle .left_terminal {
+.circle .left_cmd {
   z-index: 1;
-  transform: rotate(173deg);
+  transform: rotate(30deg);
   background: var(--scrum);
 }
 
-.circle .right_terminal {
+.circle .right_cmd {
+  z-index: 3;
+  transform: rotate(180deg);
+  background: var(--scrum);
+}
+
+/* Color UNIX */
+
+.num_unix {
+  color: var(--scrum);
+}
+
+/* Rotación UNIX*/
+
+.circle .left_unix {
+  z-index: 1;
+  transform: rotate(20deg);
+  background: var(--scrum);
+}
+
+.circle .right_unix {
   z-index: 3;
   transform: rotate(180deg);
   background: var(--scrum);
@@ -563,7 +583,7 @@ header {
 
 .circle .left_git {
   z-index: 1;
-  transform: rotate(142deg);
+  transform: rotate(10deg);
   background: var(--git);
 }
 
@@ -603,7 +623,7 @@ header {
 
 .circle .left_seo {
   z-index: 1;
-  transform: rotate(123deg);
+  transform: rotate(80deg);
   background: var(--seo);
 }
 
