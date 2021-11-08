@@ -118,7 +118,7 @@ li {
 }
 
 .borji:hover {
-  cursor: url(../img/contacto/bohdeveloper.png), auto;
+  cursor: url(../img/contacto/Borja-Olazabal.png), auto;
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -647,10 +647,10 @@ header {
 /* PROYECTOS */
 
 .github:hover {
-  cursor: url(../img/proyectos/gh.png), auto;
+  cursor: url(../img/proyectos/github-borja-olazabal.png), auto;
 }
 .codepen:hover {
-  cursor: url(../img/proyectos/cp.png), auto;
+  cursor: url(../img/proyectos/codepen-borja-olazabal.png), auto;
 }
 
 .filtro_contrast {
