@@ -1,8 +1,6 @@
 /* VARIABLES */
 :root {
   --azul_dev: #0cabb1;
-  --azul_shw_dev: rgba(1, 57, 59, 0.489);
-  --azul_dark_dev: rgb(11, 97, 100);
   --fondo: #212429;
   --fondo_shw: #191b1e;
 
@@ -634,6 +632,10 @@ header {
 }
 
 /* PROYECTOS DESTACADOS */
+
+.en_desarrollo {
+  background-color: rgba(39, 79, 81, 0.387) !important;
+}
 
 .destacadosElmnt {
   width: 8rem;
