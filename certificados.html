@@ -14,14 +14,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel=stylesheet type="text/css" href="css/main.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css' rel='stylesheet' />
     <script src="js/bootstrap.bundle.min.js"></script>
     <script language="javascript" type="text/javascript" src="js/home.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js'></script>
 </head>
 
 <body class="bg-dark ps-3 pe-3 pt-3 contenedor">
-    <input type="hidden" id="proyectos">
+    <input type="hidden" id="contacto">
     <div id="actu" class="
     alert alert-white alert-dismissible
     fade
@@ -48,10 +50,10 @@
                             <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="proyectos.html">Proyectos</a>
+                            <a class="nav-link" href="proyectos.html">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="certificados.html">Certificados</a>
@@ -89,65 +91,9 @@
             <a href="mailto:boh.developer.fullstack@gmail.com">boh.developer.fullstack@gmail.com</a>
         </div>
     </div>
-    <article class="min-vh-100 pt-5">
-        <div class="row p-5">
-            <!-- Video desde Youtube -->
-            <!-- <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 no_mp">
-        
-                   Parametros personalizar reproductor
-                    -Reproducción en bucle:
-                    ?loop=1
-                    -Denegar manejo reproductor con teclado:
-                    ?disablekb=0
-                    -Ocultar el logo de YouTube:
-                    ?modestbranding=0
-                    -Ocultar los controles del reproductor:
-                    ?controls=0
-                    -Modificar el color de los controles:
-                    ?color=white
-                    -Ocultar información del video:
-                    ?showinfo=1
-                    -Reproducción automática:
-                    ?autoplay=1
-                    -Ocultar reproducción de videos relacionados:
-                    ?rel=0
-                   
-                    
-                    <iframe class="muestra_proyecto" src="https://www.youtube-nocookie.com/embed/lseKn1EXimE"
-                        title="Snake"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
-                    </iframe>
-               
-            </div> -->
 
-            <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 no_mp">
-                <a href="https://github.com/bohdeveloper/PyBank" target="_blank" data-toggle="tooltip"
-                    data-placement="top" title="Open in GitHub" class="muestra_btn github">
-                    <img src="img/proyectos/pybank.png"
-                        class="muestra_proyecto filtro_contrast animate__animated animate__fadeIn" alt="PyBank"
-                        id="pybank_img">
-                </a>
-            </div>
+    <article class="min-vh-100">
 
-            <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 no_mp">
-                <a href="https://github.com/bohdeveloper/PizzaSaturn" target="_blank" data-toggle="tooltip"
-                    data-placement="top" title="Open in GitHub" class="muestra_btn github">
-                    <img src="img/proyectos/pizzasaturn.png"
-                        class="muestra_proyecto filtro_contrast animate__animated animate__fadeIn" alt="PizzaSaturn"
-                        id="pizzasaturn_img">
-                </a>
-            </div>
-
-            <div class="col-sm-6 col-lg-4 col-xl-3 col-xxl-2 no_mp">
-                <a href="https://codepen.io/bohdeveloper/pen/QWdMrpR" target="_blank" data-toggle="tooltip"
-                    data-placement="top" title="Open in CodePen" class="muestra_btn codepen">
-                    <img src="img/proyectos/snake.png"
-                        class="muestra_proyecto filtro_contrast animate__animated animate__fadeIn" alt="Snake"
-                        id="snake_img">
-                </a>
-            </div>
-        </div>
     </article>
     <footer class="bg-pie copy">
         <div class="text-center p-1 color_dev">© 2021 Borja O. H.</div>
