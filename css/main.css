@@ -668,8 +668,14 @@ header {
   transition: 0.5s;
 }
 
+.filtro_border {
+  filter: opacity(80%);
+  transition: 0.5s
+}
+
 .filtro_border:hover {
-  border: 5px solid var(--azul_dev);
+  filter: opacity(100%);
+  transition: 0.5s
 }
 
 .muestra_proyecto {
