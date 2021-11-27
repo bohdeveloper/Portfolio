@@ -654,14 +654,22 @@ header {
 .codepen:hover {
   cursor: url(../img/proyectos/codepen-borja-olazabal.png), auto;
 }
+.udemy:hover {
+  cursor: url(../img/proyectos/udemy-borja-olazabal.png), auto;
+}
 
 .filtro_contrast {
   filter: contrast(10%);
+  transition: 0.5s;
 }
 
 .filtro_contrast:hover {
   filter: contrast(100%);
   transition: 0.5s;
+}
+
+.filtro_border:hover {
+  border: 5px solid var(--azul_dev);
 }
 
 .muestra_proyecto {
